@@ -114,7 +114,7 @@ _**Note:** Add your project designs below._
 
 #### Goal
 
-**[your short description]**
+**[Create a ]**
 
 #### Design process
 
