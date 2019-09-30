@@ -114,11 +114,20 @@ _**Note:** Add your project designs below._
 
 #### Goal
 
-**[Create a ]**
+**[Create an interactive game full with scoreboard]**
 
 #### Design process
 
-**[your sketches, the things you tried, the questions you asked yourself, the answers, the sticking points, the iterations, the restarts, the final version]**
+**[the things you tried, the questions you asked yourself, the answers, the sticking points, the iterations, the restarts, the final version]**
+
+How can I create a game with obstacles? How to create a challenging game? How will the player move the sprite?
+
+I can create falling onjects onto the player.  The player can move side to side using input buttons A and B.  If the falling object hits the player, the game is over.  
+
+Game is over when the falling object and the player touch each other in the same space. 
+
+
+
 
 #### JS Constructs & objects
 
