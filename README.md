@@ -110,11 +110,9 @@ _**Note:** Add your project designs below._
 
 ### Midterm project
 
-_**Note:** Add your project designs below._
-
 #### Goal
 
-**[Create an interactive game full with scoreboard]**
+Create an interactive game full with scoreboard
 
 #### Design process
 
@@ -127,12 +125,24 @@ I can create falling onjects onto the player.  The player can move side to side 
 Game is over when the falling object and the player touch each other in the same space. 
 
 
-
-
 #### JS Constructs & objects
 
-**[which JavaScript features you used in the implementation of your project idea]**
+I used While, if, and else statements to help with the various conditions I needed and for all of the possible scenarios.
+
+I also used Game functions such as sprites to create the player and Math.random function to generate random times in which the hazards would fall down
 
 ### Final project
 
-**[etc.]**
+#### Goal
+
+Use the microbit to interact with my speakers and play various tunes depending on the buttons pressed
+
+#### Design process
+
+How will I connect the speakers to the microbit and have them speak to one another?
+
+A simple connection can be made using the jack itself from the speaker and attatching two wires (one for ground and another for pin0) to the jack using alligator clips.
+
+#### JS Constructs & objects
+
+Using if and else statements, I was able to iterate through different states which play different melodies.
