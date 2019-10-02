@@ -110,20 +110,51 @@ _**Note:** Add your project designs below._
 
 ### Midterm project
 
-_**Note:** Add your project designs below._
-
 #### Goal
 
-**[your short description]**
+Create an interactive game full with scoreboard
 
 #### Design process
 
-**[your sketches, the things you tried, the questions you asked yourself, the answers, the sticking points, the iterations, the restarts, the final version]**
+**[the things you tried, the questions you asked yourself, the answers, the sticking points, the iterations, the restarts, the final version]**
+
+How can I create a game with obstacles? How to create a challenging game? How will the player move the sprite?
+
+I can create falling onjects onto the player.  The player can move side to side using input buttons A and B.  If the falling object hits the player, the game is over.  
+
+Game is over when the falling object and the player touch each other in the same space. 
+
 
 #### JS Constructs & objects
 
-**[which JavaScript features you used in the implementation of your project idea]**
+I used While, if, and else statements to help with the various conditions I needed and for all of the possible scenarios.
+
+I also used Game functions such as sprites to create the player and Math.random function to generate random times in which the hazards would fall down
 
 ### Final project
 
-**[etc.]**
+#### Goal
+
+Construct a level using the microbit. The microbit should display with the LED's the current tilt when it is tilted in any direction.  The amount of tilt should also be displayed on the microbit.
+
+#### Design process
+
+There is a built in accelerometer on the microbit I can put to use.
+
+I need an array to store the tilt values.  I set the tilt values [0,1,2,3] to be left, right, foward, and back.
+I need an array list to store the previous tilt values.
+
+Since I cannot display the tilt values directly onto the microbit, I will need to convert them somehow to numbers which can be displayed.
+
+There are various ways to tilt such as tilt only in one direction, tilt in two directions, as well as tilting in one direction more than the other.
+
+I will need to plot the actual LED matrix and the conditions in which they will light up (Left, right, foward, back, foward left, backward left, foward right, backward right
+
+If state changed, then update previous step and then change the stateChange. Lastly, plot result.
+
+#### JS Constructs & objects
+
+Various else if statements iterates through the many scenarios. Arrays for tilt state and previous state are created.As well as an array for the LED's.
+
+tiltBoundary and tiltSensitivity are used as boundaries for the tilts.
+calibration variables calibratedPitch and calibratedRoll are used for the initial state of the system. When pitch and roll are zeroed out.
