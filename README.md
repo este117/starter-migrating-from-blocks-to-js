@@ -135,14 +135,27 @@ I also used Game functions such as sprites to create the player and Math.random 
 
 #### Goal
 
-Use the microbit to interact with my speakers and play various tunes depending on the buttons pressed
+Construct a level using the microbit. The microbit should display with the LED's the current tilt when it is tilted in any direction.  The amount of tilt should also be displayed on the microbit.
 
 #### Design process
 
-How will I connect the speakers to the microbit and have them speak to one another?
+There is a built in accelerometer on the microbit I can put to use.
 
-A simple connection can be made using the jack itself from the speaker and attatching two wires (one for ground and another for pin0) to the jack using alligator clips.
+I need an array to store the tilt values.  I set the tilt values [0,1,2,3] to be left, right, foward, and back.
+I need an array list to store the previous tilt values.
+
+Since I cannot display the tilt values directly onto the microbit, I will need to convert them somehow to numbers which can be displayed.
+
+There are various ways to tilt such as tilt only in one direction, tilt in two directions, as well as tilting in one direction more than the other.
+
+I will need to plot the actual LED matrix and the conditions in which they will light up (Left, right, foward, back, foward left, backward left, foward right, backward right
+
+If state changed, then update previous step and then change the stateChange. Lastly, plot result.
 
 #### JS Constructs & objects
 
-Using if and else statements, I was able to iterate through different states which play different melodies.
+Various else if statements iterates through the many scenarios. Arrays for tilt state and previous state are created.As well as an array for the LED's.
+
+tiltBoundary and tiltSensitivity are used as boundaries for the tilts.
+calibration variables calibratedPitch and calibratedRoll are used for the initial state of the system. When pitch and roll are zeroed out.
+
